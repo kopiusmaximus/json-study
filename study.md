@@ -38,7 +38,17 @@ As it makes sense to you please write the following in JSON format:
 -   Has lived in two places recently: 123 Fake street, and 2 Muchinfo Road
 
 ```json
-<!-- your answer here -->
+{ "name": "Jason",
+  "cat": "Mr. Kitty",
+  "roommates": ["Dave," "Miller"],
+  "favorite teams": {
+        "baseball": "Red Sox",
+        "football": "Patriots",
+        "hockey": "Bruins",
+  },
+  "current address": "123 Fake street",
+  "former address": "2 Muchinfo Road"
+}
 ```
 
 I forgot, my roomate Dave has two goldfish, one named Bob (he's red) and the
@@ -46,7 +56,31 @@ other named Mr.MagicNibbles (yellow) and bites a bit. Please copy the JSON you
 already wrote and include the information about Dave's fish.
 
 ```json
-<!-- your answer here -->
+{ "person": {
+      "name": "Jason",
+      "pets": [
+          {"type": "cat", "name":"Mr. Kitty"},
+          {"type": "goldfish", "name": "Bob", "color": "red"},
+          {
+              "type": "goldfish",
+              "name": "Mr.MagicNibbles",
+              "color": "red",
+              "power": "bites"
+          },
+      ],
+      "roommates": [
+          {"name": "Dave"}
+          {"name": "Miller"}
+      ],
+      "favorite teams": {
+          "baseball": "Red Sox",
+          "football": "Patriots",
+          "hockey": "Bruins",
+      },
+      "current address": "123 Fake street",
+      "former address": "2 Muchinfo Road"
+  }
+}
 ```
 
 ## JSON Methods
@@ -54,7 +88,7 @@ already wrote and include the information about Dave's fish.
 Using the JSON your wrote above, can you write a method on the JSON?
 
 ```json
-<!-- your answer here -->
+No - JSON is a string, not an object, so it cannot have methods.
 ```
 
 ## JSON Comments
@@ -62,5 +96,5 @@ Using the JSON your wrote above, can you write a method on the JSON?
 Using the JSON your wrote above, can you write a comment in the JSON?
 
 ```json
-<!-- your answer here -->
+No - JSON is a string, not executable code, so it cannot have comments.
 ```
